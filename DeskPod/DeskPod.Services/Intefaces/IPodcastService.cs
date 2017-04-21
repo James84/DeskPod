@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using DeskPod.Services.Dtos;
 
 namespace DeskPod.Services.Intefaces
 {
     public interface IPodcastService
     {
-        Task Load(string url);
+        Task<IEnumerable<PodcastDto>> Get(string url);
     }
 }

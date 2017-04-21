@@ -11,14 +11,7 @@ namespace DeskPod.Services.Services
 {
     public class PodcastService : IPodcastService
     {
-        private IList<PodcastDto> _podcasts;
-
-        public PodcastService()
-        {
-            _podcasts = new List<PodcastDto>();
-        }
-
-        public async Task Load(string url)
+        public async Task<IEnumerable<PodcastDto>> Get(string url)
         {
             using (var client = new HttpClient())
             {
@@ -27,22 +20,12 @@ namespace DeskPod.Services.Services
 
                 var items = xDocument.Descendants("item");
 
-                foreach (var item in items)
-                {
-                    ProcessItem(item);
-                }
-
-                _podcasts = _podcasts.OrderByDescending(p => p.PublicationDate)
-                                     .ToList();
+                return items.Select(BuildPodcastDto)
+                            .Where(p => p != null);
             }
         }
 
-        public IList<PodcastDto> GetAll()
-        {
-            return _podcasts;
-        }
-
-        private void ProcessItem(XElement item)
+        private static PodcastDto BuildPodcastDto(XElement item)
         {
             DateTime publicationDate;
 
@@ -51,8 +34,10 @@ namespace DeskPod.Services.Services
                 var podcastTitle = item.Descendants("title").FirstOrDefault()?.Value;
                 var podcastUrl = item.Descendants("enclosure").FirstOrDefault()?.Attribute("url").Value;
 
-                _podcasts.Add(new PodcastDto(podcastTitle, podcastUrl, publicationDate));
+                return new PodcastDto(podcastTitle, podcastUrl, publicationDate);
             }
+
+            return null;
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DeskPod.Services.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DeskPod.Web.Controllers
@@ -10,6 +11,17 @@ namespace DeskPod.Web.Controllers
     {
         public IActionResult Index()
         {
+            return View();
+        }
+        
+        public async Task<IActionResult> Podcasts(string url)
+        {
+            if(string.IsNullOrEmpty(url))
+                return RedirectToAction("Index");
+
+            var podcastService = new PodcastService();
+            var podcasts = podcastService.Get(url);
+
             return View();
         }
 
