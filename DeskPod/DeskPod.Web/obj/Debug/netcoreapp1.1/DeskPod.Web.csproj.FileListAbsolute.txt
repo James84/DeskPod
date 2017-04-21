@@ -1,0 +1,11 @@
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\bin\Debug\netcoreapp1.1\DeskPod.Web.deps.json
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\bin\Debug\netcoreapp1.1\DeskPod.Web.runtimeconfig.json
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\bin\Debug\netcoreapp1.1\DeskPod.Web.runtimeconfig.dev.json
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\bin\Debug\netcoreapp1.1\DeskPod.Web.dll
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\bin\Debug\netcoreapp1.1\DeskPod.Web.pdb
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\bin\Debug\netcoreapp1.1\DeskPod.Services.dll
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\bin\Debug\netcoreapp1.1\DeskPod.Services.pdb
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\obj\Debug\netcoreapp1.1\DeskPod.Web.csprojResolveAssemblyReference.cache
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\obj\Debug\netcoreapp1.1\DeskPod.Web.AssemblyInfo.cs
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\obj\Debug\netcoreapp1.1\DeskPod.Web.dll
+C:\git\private\PodcastManager\DeskPod\DeskPod.Web\obj\Debug\netcoreapp1.1\DeskPod.Web.pdb

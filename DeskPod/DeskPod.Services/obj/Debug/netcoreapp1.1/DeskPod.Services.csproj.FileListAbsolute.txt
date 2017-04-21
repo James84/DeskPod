@@ -1,0 +1,6 @@
+C:\git\private\PodcastManager\DeskPod\DeskPod.Services\bin\Debug\netcoreapp1.1\DeskPod.Services.deps.json
+C:\git\private\PodcastManager\DeskPod\DeskPod.Services\bin\Debug\netcoreapp1.1\DeskPod.Services.dll
+C:\git\private\PodcastManager\DeskPod\DeskPod.Services\bin\Debug\netcoreapp1.1\DeskPod.Services.pdb
+C:\git\private\PodcastManager\DeskPod\DeskPod.Services\obj\Debug\netcoreapp1.1\DeskPod.Services.AssemblyInfo.cs
+C:\git\private\PodcastManager\DeskPod\DeskPod.Services\obj\Debug\netcoreapp1.1\DeskPod.Services.dll
+C:\git\private\PodcastManager\DeskPod\DeskPod.Services\obj\Debug\netcoreapp1.1\DeskPod.Services.pdb
