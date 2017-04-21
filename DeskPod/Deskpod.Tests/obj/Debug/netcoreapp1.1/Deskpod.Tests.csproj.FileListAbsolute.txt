@@ -1,0 +1,11 @@
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\bin\Debug\netcoreapp1.1\Deskpod.Tests.deps.json
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\bin\Debug\netcoreapp1.1\Deskpod.Tests.runtimeconfig.json
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\bin\Debug\netcoreapp1.1\Deskpod.Tests.runtimeconfig.dev.json
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\bin\Debug\netcoreapp1.1\Deskpod.Tests.dll
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\bin\Debug\netcoreapp1.1\Deskpod.Tests.pdb
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\obj\Debug\netcoreapp1.1\Deskpod.Tests.AssemblyInfo.cs
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\obj\Debug\netcoreapp1.1\Deskpod.Tests.dll
+C:\git\private\PodcastManager\DeskPod\Deskpod.Tests\obj\Debug\netcoreapp1.1\Deskpod.Tests.pdb
