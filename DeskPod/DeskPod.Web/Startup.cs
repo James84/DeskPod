@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DeskPod.Services.Intefaces;
+using DeskPod.Services.Services;
+using DeskPod.Web.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -15,10 +14,11 @@ namespace DeskPod.Web
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
+                          .SetBasePath(env.ContentRootPath)
+                          .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                          .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                          .AddEnvironmentVariables();
+
             Configuration = builder.Build();
         }
 
@@ -29,6 +29,11 @@ namespace DeskPod.Web
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddSingleton(provider => Configuration);
+            
+            services.AddScoped<IPodcastService, CookiePodcastService>();
+            services.AddScoped<IPodcastParser, PodcastParser>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,12 +54,7 @@ namespace DeskPod.Web
 
             app.UseStaticFiles();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvc(RouteConfig.Register);
         }
     }
 }

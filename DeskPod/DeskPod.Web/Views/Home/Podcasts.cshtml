@@ -1,5 +1,19 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model DeskPod.Web.Models.EpisodesViewModel
+
+<form method="get" action="/podcasts">
+    <input placeholder="add url" name="url" />
+    <input type="submit" />
+</form>
+
+<ul>
+    @foreach (var podcast in Model.Podcasts)
+    {
+        <li>
+            <span>@podcast.Title</span>
+            <span>@podcast.PublicationDate</span>
+            <audio controls>
+                <source src="@podcast.Url"/>
+            </audio>
+        </li>
+    }
+</ul>
